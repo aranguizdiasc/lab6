@@ -10,7 +10,7 @@ def menu():
     print("3. Quit")
     print()
 
-def pass_encode(): # “00009962” will become “33332295” after encoding
+def pass_encode(password): # “00009962” will become “33332295” after encoding
     new_pass = ""
     for num in password[0:]:
         new_digit = str(int(num) + 3)
@@ -29,7 +29,7 @@ if __name__ == "__main__":
             print("Your password has been encoded and stored!")
 
         if option == 2: # decode
-            pass
+            print(f"The encoded password is {encoded_pass}, and the original password is {password}.")
 
         elif option == 3: # quit
             break
