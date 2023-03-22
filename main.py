@@ -25,7 +25,6 @@ if __name__ == "__main__":
             password = input("Please enter your password to encode: ")
             encoded_pass = pass_encode(password)
             print("Your password has been encoded and stored!")
-            print(encoded_pass)
 
         if option == 2: # decode
             pass
