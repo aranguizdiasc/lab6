@@ -17,6 +17,14 @@ def pass_encode(password): # “00009962” will become “33332295” after enc
         new_pass += new_digit[-1]
     return new_pass
 
+
+def pass_decode(password):
+    new_pass = ""
+    for num in password[0:]:
+        new_digit = str(int(num) - 3)
+        new_pass += new_digit[-1]
+    return new_pass
+
 if __name__ == "__main__":
     while True:
         # print all the menu options
